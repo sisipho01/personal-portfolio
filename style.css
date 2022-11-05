@@ -1,13 +1,16 @@
 
-.home{
-    background-color: #3F3B6C;
+#home{
+    background-color: #A3C7D6;
 }
-.navbar{
+header .container{
     text-transform: capitalize;
     text-decoration-color: white;
+    align-content: center;
+    justify-content: space-between;
 }
 *{
     scroll-behavior: smooth;
+    background-color: #3F3B6C;
 }
 h1,h2,h3,h4,h5,h6,p,span,td,a{
     cursor: pointer;
@@ -232,6 +235,78 @@ span{
 .fab {
     color: aliceblue;
 }
+.testimonials{
+    margin: 50px auto;
+}
+.testimonials h1{
+    text-align: center;
+    font-weight: bold;
+    color:black ;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.testimonials h1::after{
+    content: '';
+    background: #3F3B6C;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+.testimonials .row{
+    margin-top: 30px;
+}
+.col-lg-6{
+    margin: 40px auto;
+}
+.profile{
+    padding: 70px 10px 10px;
+}
+.profile img{
+    top: -60px;
+    position: absolute;
+    left: calc(50% - 60px);
+    border: 5px solid white;
+}
+.user{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.profile h3{
+    font-size: 20px;
+    margin-top: 15px;
+    color: #A3C7D6;
+}
+blockquote{
+    font-size: 16px;
+    line-height: 30px;
+}
+blockquote::before{
+    content:'\201D';
+    font-size: 50px;
+    position: relative;
+    color: #9F73AB;
+    line-height: 20px;
+    bottom:-15px;
+    right: 5px;
+}
+blockquote::after{
+    content:'\201C';
+    font-size: 50px;
+    position: relative;
+    color: #9F73AB;
+    line-height: 10px;
+    bottom:-15px;
+    left: 5px;
+}
+.profile :hover{
+    box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
 /* footer styling */
 #footer {
     background-color: #000000;
