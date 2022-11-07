@@ -1,313 +1,423 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sisipho Portfolio</title>
-    <script src="https://kit.fontawesome.com/be52ce11ec.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="../style.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/be52ce11ec.js" crossorigin="anonymous"></script>
-  </head>
 
-  <body>
-    <!----navbar section--------->
-    <header>
-        <section class="navbar" id="navbar">
-        <div class="container">
-                <div class="navbar navbar-expand-lg navbar-light">
-                    <a href="#" class="navbar-brand text-white">
-                        PORT<span>FOLIO</span>
-                     </a>
-                    <button
-                    class="navbar-toggler" style="border: none" type="button"
-                    data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa fa-bars text-white" display: top;></i>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Sisipho Portfolio!</title>
+    <script src="https://kit.fontawesome.com/be52ce11ec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div class="row main-navbar">
+        <div class="col-11 mx-auto">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fff" class="bi bi-list"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg>
                     </button>
-
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                            <a class="nav-link" href="#home" style="color: #9f73ab"
-                                >Home</a>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#home">Home</a>
                             </li>
-                            <li class="nav-item active">
-                            <a class="nav-link" href="#about" style="color: white"
-                                >About</a>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#about">About Me</a>
                             </li>
-                            <li class="nav-item active">
-                            <a class="nav-link" href="#Qualifications" style="color: white"
-                                >Qualifications</a>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#projects">Projects</a>
                             </li>
-                            <li class="nav-item active">
-                            <a class="nav-link" href="#projects" style="color: white"
-                                >Projects</a>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#qualification">Qualifications</a>
                             </li>
-                            <li class="nav-item active">
-                            <a class="nav-link" href="#testimonials" style="color: white"
-                                >Testimonials</a>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Skills
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#skills">HTML</a></li>
+                                    <li><a class="dropdown-item" href="#skills">CSS</a></li>
+
+                                    <li><a class="dropdown-item" href="#skills">Bootstrap</a></li>
+                                </ul>
                             </li>
-                            <li class="nav-item active">
-                            <a class="nav-link" href="#contact" style="color: white"
-                                >Contact</a>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#contact" tabindex="-1" aria-disabled="true">Contact Me</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </div>
-       </div>
-    </section>
-    </header>
+            </nav>
+        </div>
+    </div>
+    <!-- /navbar -->
 
-    <section class="landing_page">
-      <div class="hero_section" id="home">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col--md-6 col-ms-12 col-xs-12">
-              <h3>Hello</h3>
-              <h1>I<span>'m</span> SISIPHO</h1>
-              <h2>Web developer student</h2>
-              <p>
-                I enjoy creating things for the web. I am passionate about
-                software developement. I am skilled in HTML, CSS and JavaScript.
-              </p>
-              <div clas="btn-container">
-                <button class="btn btn-light animated">Contact Me</button>
-              </div>
-            </div>
-            <div class="col-lg-6 col--md-6 col-ms-12 col-xs-12">
-              <center>
-                <img src="./img/IMG-20221101-WA0090.jpg" alt="" />
-              </center>
-            </div>
-          </div>
-        </div>
-      </div>
-    <section class="about" id="about-me">
-        <div class="about_section" id="about">
-            <div class="container2">
+    <!-- slider -->
+    <section class="landing_page" id="home">
+        <div class="row slider">
+            <div class="col-10 mx-auto">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-12 mx-auto">
-                        <h2 id="heading">About Me</h2>
-                            <span class="subtitle">My Introduction</span>
-                                <div class="about-photo">
-                                    <img src="./img/IMG-20221026-WA0026.jpg" alt="Sisipho" width="197" height="155">
-                                </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12 about_me_right_section mx-auto">
-                        <p id="txt">I am a 21 year old ambitious female who is prepared to achieve
-                            the desired goals of the job description. I am a hard worker, self motivated and goal orientated individual who is always looking for a challange to enhance my skills and knowledge. I like interact with people and adapt easily to different kinds of environment.</p>
-                    <table class="table">
-                        <tr>
-                        <td>Full Names</td>
-                    <td>:</td>
-                    <td>Sisipho Aviwe Magqwashe</td>
-                  </tr>
-                  <tr>
-                    <td>Email</td>
-                    <td>:</td>
-                    <td>magqwashesisipho@gmail.com</td>
-                  </tr>
-                  <tr>
-                    <td>Location</td>
-                    <td>:</td>
-                    <td>Langa, Cape Town</td>
-                  </tr>
-                </table>
-                <button class="btn btn-light btn-sm animate_animated">
-                  Download CV
-                </button>
-              </div>
+                    <div class="col-md-4 slider-image">
+                        <img src="./images/IMG-20221101-WA0090.jpg" alt="">
+                    </div>
+
+                    <div class="col-md-8">
+                        <p class="name">I am Sisipho</p>
+                        <h3 class="job">Web Developer</h3>
+                        <h3 class="location">In Cape Town</h3>
+                        <p class="description"> I enjoy creating things for the web. I am passionate about web
+                            development. I am skilled in HTML, CSS and Bootstrap.</p>
+                    </div>
+                </div>
             </div>
         </div>
-      </div>
     </section>
-      <div class="skills_section" id="skills">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-6 col-ms-12 col-xs-12"></div>
-          </div>
-          <h2>Skills</h2>
-          <p>HTML</p>
-          <div class="container">
-            <div class="skills html">70%</div>
-          </div>
-          <p>CSS</p>
-          <div class="container">
-            <div class="skills css">80%</div>
-          </div>
-          <p>Javascript</p>
-          <div class="container">
-            <div class="skills js">50%</div>
-          </div>
+    <!-- slider -->
+
+    <!-- about us -->
+    <section class="about" id="about">
+        <div class="row aboutus mt-5">
+            <div class="col-11 mx-auto">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="lg-title">About Me</h3>
+                    </div>
+                    <!-- <div class="col-md-6"></div> -->
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="about-image" src="./images/IMG-20221020-WA0009.jpg" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <p class="a-job">
+                            Web Developer in <span>training</span></p>
+
+                        <p class="text">A 21 year old ambitious female who is prepared to achieve
+                            the desired goals of the job description. I am a hard worker, self motivated and goal
+                            orientated individual who is always looking for a challenge to enhance my skills and
+                            knowledge.
+                            I like interact with people and adapt easily to different kinds of environment.</p>
+
+                        <div class="line"></div>
+                        <section class="row mt-3">
+                            <h3 class="p-i">Personal Info</h3>
+                            <div class="col-md-6">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th>Name: </th>
+                                            <td> Sisipho Aviwe Magqwashe</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Age:</th>
+                                            <td>21</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Email:</th>
+                                            <td>magqwashesisiho@gmail.com</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <a href="./assets/pdf/CV_Sisipho .pdf" class="">
+                            <button class="btn btn-light btn-sm animate_animated">
+                                Download CV
+                            </button>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      
-<!--qualifications-->
-<section class="content-section bg-light" id="Qualifications">
-    <div class="container px-4 px-lg-5 text-center">
-      <div class="row gx-4 gx-lg-5 justify-content-center">      
-         <section class="content-section bg-primary" id="about">
-             <div class="container overflow-hidden text-center">
-                <div class="row gx-5">
+    </section>
+    <!-- /about us -->
+    <!----skills---->
+    <div class="skills_section" id="skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-ms-12 col-xs-12"></div>
+            </div>
+            <h2>Skills</h2>
+            <p>HTML</p>
+            <div class="container">
+                <div class="skills html">70%</div>
+            </div>
+            <p>CSS</p>
+            <div class="container">
+                <div class="skills css">80%</div>
+            </div>
+            <p>Javascript</p>
+            <div class="container">
+                <div class="skills js">50%</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Projects-->
+    <section class="my projects" id="projects">
+        <div class="row exper mt-5">
+            <div class="col-11 mx-auto">
+                <div class="row">
+                    <h3 class="lg-title">My Projects</h3>
+                    <!-- card -->
+                    <div class="col-md-4">
+                        <div class="card" style="width: 100%;">
+
+                            <div class="card-body">
+                                <h5 class="card-title">Mobile Repair Site</h5>
+                                <p class="card-text">Over here i created a repair site for a company.</p>
+                                <a href="#" class="btn btn-secondary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card -->
+
+                    <!-- card -->
+                    <div class="col-md-4">
+                        <div class="card" style="width: 100%;">
+
+                            <div class="card-body">
+                                <h5 class="card-title">Boutique</h5>
+                                <p class="card-text">My own boutique shop.</p>
+                                <a href="#" class="btn btn-secondary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <!-- card -->
+                    <div class="col-md-4">
+                        <div class="card" style="width: 100%;">
+
+                            <div class="card-body">
+                                <h5 class="card-title">Portfolio</h5>
+                                <p class="card-text">My first portfolio.</p>
+                                <a href="#" class="btn btn-secondary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--projects-->
+
+
+    <!---QUALIFICATIONS---->
+    <section class="qualifications" id="qualification">
+        <section class="content-section" id="Qualifications">
+            <h3>Qualifications </h3>
+            <div class="container text-center">
+                <div class="row">
                     <div class="col">
                         <div class="p-3 border bg-Info">
                             <div class="resume_item resume_education">
-                                <div style="font-weight:bolder; font-size:30px;" class="resume_title" >Education</div>
-                                    <div class="resume_info">
-                                        <div class="resume_data">
-                                            <div class="content">
-                                                <p style="font-weight: bold; ">Northlink College</p>
-                                                    <div class="year">2020</div>
-                                                    N2 Fitting and machining theory </p>
-                                                </div>
-                                        </div>
-                                            <div class="resume_data">
-                                                
-                                                <div class="content">
-                                                    <p style="font-weight:bold" >Salt River Secondary School</p>
-                                                    <div class="year">2014 - 2018</div>
-                                                    Matric</p>
-                                                </div>
-                                            </div>
+                                <div style="font-weight:bolder; font-size:30px;" class="resume_title">Education</div>
+                                <div class="resume_info">
+                                    <div class="resume_data">
+                                        <p style="font-weight: bold; ">Northlink College</p>
+                                        <div class="year">2020</div>
+                                        N2 Fitting and machining theory </p>
                                     </div>
+                                </div>
+                                <div class="resume_data">
+                                    <div class="content">
+                                        <p style="font-weight:bold">Salt River Secondary School</p>
+                                        <div class="year">2014 - 2018</div>
+                                        Matric</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                          <div class="col">
-                            <div class="p-3 border bg-Info">         
-                                <div class="resume_item resume_experience">
-                              <div style="font-weight:bolder; font-size:30px" class="resume_title">Work Experience</div>
-                              <div class="resume_info">
+                </div>
+                <div class="col">
+                    <div class="p-3 border bg-Info">
+                        <div class="resume_item resume_experience">
+                            <div style="font-weight:bolder; font-size:30px" class="resume_title">Work Experience</div>
+                            <div class="resume_info">
                                 <div class="resume_data">
-                                 
+
                                     <p style="font-weight: bold;">Life Choices Academy</p>
                                     <div class="year">Sep 2022 - Present</div>
                                     Full stack developer</p>
-                                  </div>
                                 </div>
-                                <div class="resume_data">
-                                    <p style="font-weight:bold"> Digital Tribe</p>
-                                    <div class="year">2021 - 2022</div>
-                                    Customer Service advisor</p>
-                                  </div>
-                                </div>
-                                <div class="resume_data">
-                                    <p style="font-weight:bold">KFC</p>
-                                    <div class="year">2019 - 2020</div>
-                                    Team member</p>
-                                  </div>
-                                </div>
-                              </div>
+                            </div>
+                            <div class="resume_data">
+                                <p style="font-weight:bold"> Digital Tribe</p>
+                                <div class="year">2021 - 2022</div>
+                                Customer Service advisor</p>
                             </div>
                         </div>
+                        <div class="resume_data">
+                            <p style="font-weight:bold">KFC</p>
+                            <div class="year">2019 - 2020</div>
+                            Team member</p>
                         </div>
                     </div>
+                </div>
             </div>
-         </div>
-        </div>
-        </div>
-    </div>
-    </div>
-  </section>
-  <section class="testimonials" id="testimonials">
-    <div class= "container">
-        <h1>Testimonials</h1>
-        <div class="profile">
+            </div>
+            </div>
+            </div>
+
+        </section>
+    </section>
+
+
+    <!----Testimonials------>
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h1>Testimonials</h1>
+            <div class="profile">
                 <div class="row">
-                <div class="col-12 col-lg-4 text-center">
-                    <img src="./img/testimonial-2.png" class="user">
+                    <div class="col-12 col-lg-4 text-center">
+                        <img src="./images/testimonial-2.png" class="user">
                         <h3>Oslin Johnson<span>Lecturer</span></h3>
-                        <blockquote>Sisipho is someone who strives for success in her work. She always has a strong and positive attitude
-                            towards life, and is a great problem-solver. She is someone who very rarely needs assistance and
+                        <blockquote>Sisipho is someone who strives for success in her work. She always has a strong and
+                            positive attitude
+                            towards life, and is a great problem-solver. She is someone who very rarely needs assistance
+                            and
                             gives her all to ensure that she is building a successful career for herself.</blockquote>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                    <img src="./img/testimonial-3.jpg" class="user">
-                        <h3>Elizabeth Ramalatsoa<span>Peer</span></h3>
-                        <blockquote>Sisipho is the hardest worker that I know. She always goes above and beyond of what is expected of her.
-                            One the best qualities that she possesses is determination. A truly amazing quality that not everyone possesses.</blockquote>
                     </div>
-                <div class="col-12 col-lg-4 text-center">
-                    <img src="./img/beyonce.png" class="user">
+                    <div class="col-12 col-lg-4 text-center">
+                        <img src="./images/testimonial-3.jpg" class="user">
+                        <h3>Elizabeth Ramalatsoa<span>Peer</span></h3>
+                        <blockquote>Sisipho is the hardest worker that I know. She always goes above and beyond of what
+                            is expected of her.
+                            One the best qualities that she possesses is determination. A truly amazing quality that not
+                            everyone possesses.</blockquote>
+                    </div>
+                    <div class="col-12 col-lg-4 text-center">
+                        <img src="./images/beyonce.png" class="user">
                         <h3>Beyonce Leanord<span>Peer</span></h3>
-                        <blockquote>Sisipho has been extremely responsive, pleasure to work with because of her attributes such as: being intelligent and going an extra mile in all programming challenges.</blockquote>
-                </div>
-                <!--  -->
-                <div class="container">
-                    <div class="profile d-flex ">
-                    <div class="row">
-                            <div class="col-4 text-center">
-                                <img src="./img/seaba.jpg" class="user">
+                        <blockquote>Sisipho has been extremely responsive, pleasure to work with because of her
+                            attributes such as: being intelligent and going an extra mile in all programming challenges.
+                        </blockquote>
+                    </div>
+                    <!--  -->
+                    <div class="container">
+                        <div class="profile ">
+                            <div class="row">
+                                <div class="col-12 col-lg-4 text-center">
+                                    <img src="./images/seaba.jpg" class="user">
                                     <h3>Sibabalwe Mafesteri<span>Peer</span></h3>
-                                    <blockquote>Sisipho is a hard working lady with a big heart. She is organised, efficient and extremely competent with excellent rapport with people of all ages. Her communication skills are excellent no matter if you are talking about verbal or written. Her most important quality is that she always keeps herself updated with new information .Its just amazing to work with such a kind personality.</blockquote>
+                                    <blockquote>Sisipho is a hard working lady with a big heart. She is organized,
+                                        efficient and extremely competent with excellent rapport with people of all
+                                        ages. Her communication skills are excellent no matter if you are talking about
+                                        verbal or written. Her most important quality is that she always keeps herself
+                                        updated with new information .Its just amazing to work with such a kind
+                                        personality.</blockquote>
                                 </div>
-                            <div class="col-4 text-center">
-                                <img src="./img/zoe daniels.jpg" class="user">
+                                <div class="col-12 col-lg-4 text-center">
+                                    <img src="./images/zoe daniels.jpg" class="user">
                                     <h3>Zoe Daniels<span>Peer</span></h3>
-                                    <blockquote>Sisipho is an ambitous and a hard working woman. A very  brilliant and bright woman, she always does her utmost best when it comes to her work. She always makes sure that she understands the work and if not she communicates to ask for guidance. Her personality is one of the things that builds her amazing character and I feel that she would be suitable and a good asset to any company that finds fit.</blockquote>
+                                    <blockquote>Sisipho is an ambitious and a hard working woman. A very brilliant and
+                                        bright woman, she always does her utmost best when it comes to her work. She
+                                        always makes sure that she understands the work and if not she communicates to
+                                        ask for guidance. Her personality is one of the things that builds her amazing
+                                        character and I feel that she would be suitable and a good asset to any company
+                                        that finds fit.</blockquote>
+                                </div>
                             </div>
                         </div>
-                        </div>
                     </div>
-        
-  </section>
-  <!-- contact section-->
-  <section id="contact">
-    <div class="container mt-3 contactContent">
-        <h1 class="text-center">Contact Me</h1>
-
-        <div class="row mt-4">
-            <div class="col-lg-6">
-                <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
-                <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:500px;">
-                    <div id="google-maps-display" style="height:100%; width:100%;max-width:100%;">
-                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Langa,+Cape+Town,+South+Africa&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
-                        </iframe>
                 </div>
-                    <a class="from-embedmap-code" rel="nofollow" href="https://www.bootstrapskins.com/themes" id="grab-map-info">premium bootstrap themes</a>
-                 
-                </div>
-            </div>
-
-            <div class="col-lg-6">
-                <!-- form fields -->
-                <form>
-                    <input type="text" class="form-control form-control-lg" placeholder="Name">
-                    <input type="email" class="form-control mt-3" placeholder="Email">
-                    <input type="text" class="form-control mt-3" placeholder="Subject">
-                    <div class="mb-3 mt-3">
-                        <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
-                    </div>
-                </form>
-                <button type="button" class="btn btn-success mt-3">Contact Me</button>  
             </div>
         </div>
-    </div>
-</section>
+    </section>
+    <!----Testimonials----->
+
+    <!-- Contact Me  -->
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+            <h1 class="text-center">Contact Me</h1>
+
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+                    <div
+                        style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:500px;">
+                        <div id="google-maps-display" style="height:100%; width:100%;max-width:100%;">
+                            <iframe style="height:100%;width:100%;border:0;" frameborder="0"
+                                src="https://www.google.com/maps/embed/v1/place?q=Langa,+Cape+Town,+South+Africa&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                            </iframe>
+                        </div>
+                        <a class="from-embedmap-code" rel="nofollow" href="https://www.bootstrapskins.com/themes"
+                            id="grab-map-info">premium bootstrap themes</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- form fields -->
+                    <form action=https://formspree.io/f/xpznkzdw method="POST">
+                        <input type="text" class="form-control form-control-lg" placeholder="Name">
+                        <input type="email" class="form-control mt-3" placeholder="Email">
+                        <input type="text" class="form-control mt-3" placeholder="Subject">
+                        <div class="mb-3 mt-3">
+                            <textarea class="form-control" rows="5" id="comment" name="text"
+                                placeholder="Project Details"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-secondary mt-3">Contact Me</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Me -->
+
+
+    <!-- Footer -->
+
     <footer id="footer">
         <div class="container-fluid">
-        <!-- social media icons -->
+            <!-- social media icons -->
             <div class="social-icons mt-4">
-                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <div class="fa-2x">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-bounce"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-bounce"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter fa-bounce"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-bounce"></i></a>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="credits">
-        Based on design by 
-        <a class="link" tabindex="0" rel="noopener"
-           href="" target="_blank">©Sisipho</a>. <span>♥</span> Thanks!<br>
-        Copyright© coded by 
-        <a class="link" tabindex="0" rel="noopener"
-           href="https://www.linkedin.com/in/sisipho-magqwashe-7b0274221/" 
-           target="_blank">Sisipho Magqwashe</a>
-        . All rights reserved.
-    </div>
+        <div class="credits">
+            Based on design by
+            <a class="link" tabindex="0" rel="noopener" href="" target="_blank">©Sisipho</a>. <span>♥</span> Thanks!<br>
+            Copyright© coded by
+            <a class="link" tabindex="0" rel="noopener" href="https://www.linkedin.com/in/sisipho-magqwashe-7b0274221/"
+                target="_blank">Sisipho Magqwashe</a>
+            . All rights reserved.
+        </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-  </body>
+    <!-- Footer -->
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
 </html>
